@@ -32,7 +32,6 @@ class MainContainer extends React.Component {
         <SubTitle text="To Do" />
         <ListContainer todos={this.state.todos} />
         <SubTitle text="Done" />
-        <ListContainer />
       </div>
     );
   }
