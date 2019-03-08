@@ -14,6 +14,10 @@ class MainContainer extends React.Component {
       todos: [
         { title: "This is a todo", completed: false },
         { title: "This is another todo", completed: false }
+      ],
+      donetodo: [
+        { title: "This is completed", completed: true },
+        { title: "This is also completed", completed: true }
       ]
     };
   }
@@ -30,8 +34,9 @@ class MainContainer extends React.Component {
         <Title />
         <Input />
         <SubTitle text="To Do" />
-        <ListContainer todos={this.state.todos} />
+        <ListContainer listItems={this.state.todos} />
         <SubTitle text="Done" />
+        <ListContainer listItems={this.state.donetodo} />
       </div>
     );
   }
